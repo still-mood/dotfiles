@@ -1,4 +1,6 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
+# ~/.bashrc: executed by bash(1) for non-login shells.
+
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
@@ -78,7 +80,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
-
+	
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
@@ -94,12 +96,17 @@ alias l='ls -CF'
 alias c='clear'
 alias ..='cd ..'
 alias ...='cd ../..'
+alias bat="batcat"
 alias update='sudo nala update && sudo nala upgrade -y'
 alias install='sudo nala install'
 alias remove='sudo nala remove'
 alias search='nala search'
+
 alias makenote='makenote.sh'
 alias discord='flatpak run com.discordapp.Discord'
+alias config="cd ~/.config"
+
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -115,6 +122,8 @@ export CONFIG=$HOME/.config
 export NOTES=$HOME/Notebook/notes
 
 
+#----
+export PS1="\W : \H > " 
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

@@ -1,0 +1,41 @@
+[window]
+padding = { x = 8, y = 8 }
+dynamic_padding = true
+opacity = 0.6
+# decorations = "Full"   # "None" for a borderless window
+# startup_mode = "Windowed"  # Maximized | Fullscreen
+dynamic_title = true
+
+
+
+[general] 
+import = [ 
+"~/.config/alacritty/alacritty-theme/themes/duskfox.toml" ] 
+
+#Default terminal colors 
+#[colors.primary]
+#background = "#1e1e2e"   # the canvas
+#foreground = "#cdd6f4"   # default text
+
+
+
+#Font 
+[font]
+size = 14.0 
+
+
+#[font.normal]
+#family = "JetBrainsMono Nerd Font"
+#style = "Regular"
+
+#[font.bold]
+#family = "JetBrainsMono Nerd Font"
+#style = "Bold"
+
+#[font.italic]
+#family = "JetBrainsMono Nerd Font"
+#style = "Italic"
+
+#[font.bold_italic]
+#family = "JetBrainsMono Nerd Font"
+#style = "Bold Italic"
