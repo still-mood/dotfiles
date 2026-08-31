@@ -13,7 +13,8 @@ local vim = vim
 
 vim.cmd([[
 	call plug#begin()
-
+	Plug('https://github.com/nvim-treesitter/nvim-treesitter.git')
+	Plug('https://github.com/MeanderingProgrammer/render-markdown.nvim.git')
 
 
 	call plug#end()
@@ -41,8 +42,14 @@ vim.opt.number = true
 vim.opt.relativenumber = true 
 
 
+-- I saw configurations for tabs and spaces. I'll revisit this as needed
+--
+--
 
-vim.opt.swapfile = false
+
+
+-- I hate swap files. I'm so happy I found this 
+vim.opt.swapfile = false 
 
 
 
