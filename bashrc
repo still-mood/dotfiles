@@ -96,14 +96,17 @@ alias l='ls -CF'
 alias c='clear'
 alias ..='cd ..'
 alias ...='cd ../..'
-alias bat="batcat"
-alias update='sudo nala update && sudo nala upgrade -y'
-alias install='sudo nala install'
-alias remove='sudo nala remove'
-alias search='nala search'
 
-alias makenote='makenote.sh'
-alias discord='flatpak run com.discordapp.Discord'
+# Debian 
+#alias update='sudo nala update && sudo nala upgrade -y'
+#alias install='sudo nala install'
+#alias remove='sudo nala remove'
+#alias search='nala search'
+#alias discord='flatpak run com.discordapp.Discord
+
+# Arch 
+alias update="sudo pacman -Syu" 
+alias install="sudo pacman -S" 
 alias config="cd ~/.config"
 
 
